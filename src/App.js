@@ -1,6 +1,5 @@
 import React from "react";
 import DevProfileCard from "./components/DevProfileCard";
-import "./jsTasks";
 
 const App = () => {
   return (

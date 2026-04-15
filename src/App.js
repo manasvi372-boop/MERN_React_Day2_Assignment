@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DevProfileCard from "./components/DevProfileCard";
+import "./jsTasks";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      minHeight: "100vh",
+      background: "linear-gradient(135deg, #12093a, #000000)",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "#fff"
+    }}>
+      <h1 style={{ marginBottom: "20px" }}>
+        🚀 My Developer Portfolio
+      </h1>
+
+      <DevProfileCard developerIdentity="Manasvi" />
+
+      <p style={{ marginTop: "20px", opacity: 0.8 }}>
+        Built uniquely using React + custom logic ✨
+      </p>
     </div>
   );
-}
+};
 
 export default App;
